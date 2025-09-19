@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #001f24, #000000);
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 229, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00e5ff;
+}
+
+.logo span {
+  color: #a7ffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #a7ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+/* Hero (Home Section) */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 60px; /* space for navbar */
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+  animation: float 3s ease-in-out infinite;
+}
+
+.glass-card .name {
+  font-size: 2.5rem;
+  color: #00e5ff;
+}
+
+.glass-card .title {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.glass-card .title span {
+  color: #a7ffff;
+}
+
+.glass-card .desc {
+  font-size: 1.1rem;
+  color: #a7ffff;
+  margin-bottom: 20px;
+}
+
+.btn.email {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00e5ff;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.email:hover {
+  background: #a7ffff;
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+/* Floating effect */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 100px 15%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  margin-bottom: 20px;
+}
+
+.section p, 
+.section ul {
+  font-size: 1.2rem;
+  color: #a7ffff;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin: 10px 0;
+}
+
+/* Background glowing circles */
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.glow1 {
+  width: 400px;
+  height: 400px;
+  background: aqua;
+  top: -100px;
+  left: -100px;
+}
+
+.glow2 {
+  width: 400px;
+  height: 400px;
+  background: #00e5ff;
+  bottom: -100px;
+  right: -100px;
+}
+
+
+
